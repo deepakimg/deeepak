@@ -1,0 +1,37 @@
+.faq_section {
+  background: linear-gradient( 181deg , $primary1 -20%, #333c4375 90%);
+  border-bottom: 5px solid #fff;
+  & .accordion-button:not(.collapsed)::after {
+      content: "\f068";
+      background-image: none;
+      -webkit-transform: unset;
+      transform: unset;
+  }
+  & .accordion-button::after {
+      content: "\f067";
+      font-family: "Font Awesome 5 Pro";
+      background-image: none;
+  }
+  & .accordion-item {
+    & h2{
+      background-color: $primary;
+      color : $white;
+      border-radius: 20px 20px 0 0;
+      & button{
+        color: $white;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 20px 24px;
+        background-color: transparent;
+        border: 0 !important;
+        text-transform: capitalize;
+        &:focus{
+          box-shadow: unset;
+        }
+      }
+    }
+    & p{
+       font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.client_testimonials {
+    & .slider-box{
+      padding: 50px 30px 50px;
+      margin: 24px 15px;
+      border-radius: 100px 20px 100px 30px;
+      cursor: pointer;
+      background-color: $primary2;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      color: $white;
+      border-left: 3px dashed $white;
+      border-right: 3px dashed $white;
+      &:hover{
+        border-radius: 20px;
+      }
+      & .quote_top{
+        top: -40px;
+        left: 10%;
+        font-size: 50px;
+        text-shadow: 0 0 3px $black;
+      }
+      & img.author-img{
+        max-width: 74px;
+        border-radius: 100px 200% 120% 160%;
+        transition: all .5s ease-out !important;
+        object-fit: cover;
+      }
+      & .quote_bottom {
+        bottom: -31px;
+        right: 10%;
+        font-size: 50px;
+        text-shadow: 0 0 3px $black;
+      }
+      & .author-details {
+        & strong {
+            display: block;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+        & span{
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+      }
+      & p{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+      }
+   }
+}

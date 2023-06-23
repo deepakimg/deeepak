@@ -1,0 +1,339 @@
+@media (max-width: 1300px) {
+}
+
+@media (max-width: 1199px) {
+  .hero_section {
+    & .hero_content {
+      & h1 {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero_section {
+    & .hero_content {
+      & h1 {
+        font-size: 44px;
+        line-height: 56px;
+        margin-bottom: 10px;
+      }
+      & > span {
+        font-size: 16px;
+      }
+      & p {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 21px;
+        line-height: 25px;
+      }
+    }
+    & .hero_center_img {
+      max-width: 180px;
+    }
+  }
+  .comman_button {
+    font-size: 13px;
+    padding: 8px 17px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .section_title {
+    margin-bottom: 60px;
+    & h2 {
+      font-size: 34px;
+    }
+    & span {
+      padding: 1px 10px;
+      font-size: 11px;
+    }
+  }
+  .about_us {
+    & .inner-box-about {
+      padding: 40px 15px 20px;
+      & .icon_part {
+        border: 1px dashed $white;
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+        top: -29px;
+        left: 20px;
+      }
+      & .scholarship-contant {
+        & h3 {
+          font-size: 19px;
+        }
+        & p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .footer_part {
+    & .copyright-outter {
+      & .copyright {
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    & img {
+      max-width: 90px;
+    }
+    & .comman_button{
+      margin-top : 20px;
+      margin-left : 0; 
+    }
+    & .menu-bar {
+      display: block;
+      text-align: center;
+      z-index: 999;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.7s;
+      & a {
+        display: block;
+        padding: 0px;
+        & span {
+          height: 3px;
+          margin: 6px 0 0 auto;
+          width: 30px;
+          background: $white;
+          display: block;
+          -webkit-transition: 0.7s;
+          transition: 0.7s;
+          border-radius: 12px;
+        }
+        & .middle {
+          width: 22px;
+        }
+        & .last {
+          width: 15px;
+        }
+      }
+    }
+    & .header_nav {
+      position: absolute !important;
+      right: -100%;
+      z-index: 998;
+      transition: 0.7s;
+      height: 100vh;
+      top: 92px;
+      width: 100%;
+      max-width: 100%;
+      flex-wrap: wrap;
+      display: block;
+      text-align: center;
+      background: $primary1;
+      & ul {
+        flex-wrap: wrap;
+        & li {
+          width: 100%;
+          & a {
+            margin: 0;
+            padding: 26px 0;
+            display: block;
+            border-bottom: 1px dashed;
+          }
+        }
+      }
+    }
+    & .header_nav.show-menu {
+      right: 0;
+    }
+  }
+  .hero_section {
+    padding: 150px 0 70px;
+    & .hero_content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 22px;
+      & > span{
+        width: 100%;
+        margin-top: 15px;
+      }
+      & h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+      }
+      & p {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0;
+        line-height: 22px;
+      }
+      & .comman_button{
+        order : -1;
+      } 
+    }
+    & .hero_center_img {
+      max-width: 280px;
+    }
+    & .container {
+      & .col-md-8 {
+        order: 1;
+      }
+    }
+    & .wave {
+      bottom: -9px;
+      height: 40px;
+    }
+  }
+  section {
+    padding: 35px 0;
+  }
+  .section_title {
+    margin-bottom: 40px;
+    & h2 {
+      font-size: 24px;
+    }
+    & span {
+      padding: 1px 10px;
+      font-size: 10px;
+    }
+  }
+  .about_us {
+    & .inner-box-about {
+      background: $primary1;
+      color: #fff;
+      text-align: center;
+      & .icon_part {
+        border: 1px dashed $primary1;
+        background-color: $white;
+        color: $primary1;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+      }
+    }
+  }
+  .how_to_play {
+    & .play-box {
+      padding: 25px 20px 25px;
+      & .play-circle {
+        height: 80px;
+        width: 80px;
+        & span {
+          height: 68px;
+          & i {
+            font-size: 26px;
+          }
+        }
+      }
+      & .scholarship-contant {
+        & h3 {
+          font-size: 17px;
+          margin-top: 16px;
+        }
+        & p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .client_testimonials {
+    & .slider-box {
+      padding: 30px 20px 20px;
+      margin: 24px 5px;
+      border-radius: 15px;
+      cursor: pointer;
+      & .author-details {
+        & strong {
+          font-weight: bold;
+          letter-spacing: 0.5px;
+          font-size: 13px;
+        }
+        & span {
+          text-transform: capitalize;
+          letter-spacing: 1px;
+          font-size: 12px;
+        }
+      }
+      & p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+      }
+      & .quote_top {
+        top: -24px;
+        left: 10%;
+        font-size: 30px;
+      }
+      & .quote_bottom {
+        bottom: -20px;
+        right: 10%;
+        font-size: 30px;
+      }
+    }
+  }
+  .faq_section {
+    & .accordion-item {
+      & h2 {
+        & button {
+          font-weight: 600;
+          font-size: 13px;
+          padding: 11px 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .footer_part {
+    & .footer_logo {
+      & a {
+        font-size: 18px;
+        margin-bottom: 7px;
+      }
+      & p {
+        font-size: 14px;
+      }
+    }
+    & .usefull-links {
+      margin-top: 15px;
+      & h2 {
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+      & ul {
+        & li {
+          margin-bottom: 4px;
+          & a {
+            font-size: 14px;
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+    & .copyright-outter {
+      margin-top: 20px;
+      padding: 10px 0;
+      & .copyright { 
+        margin-bottom: 10px; 
+        font-size: 14px;
+        line-height: 31px;
+      }
+      & .social-footer-links {
+        & a {
+          height: 35px;
+          width: 35px;
+          margin-left: 10px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+}

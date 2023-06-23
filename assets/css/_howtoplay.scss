@@ -1,0 +1,61 @@
+.how_to_play {
+   & .play-box {
+    box-shadow: 0 2px 4px 0 darken($black , 50%);
+    padding: 40px 20px 40px;
+    border-radius: 20px;
+    background-color: $white;
+    transition: all .5s ease-out;
+    cursor: pointer;
+    border-bottom: 4px solid $primary1;
+    border-top: 4px solid $primary1;
+    overflow: hidden;
+    & .play-circle {
+      padding: 6px 1px;
+      background-color: $primary1;
+      transition: all .5s ease-out;
+      display: block;
+      margin: 0 auto;
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+      text-align: center;
+      & span{
+        background: $white;
+        display: block;
+        height: 88px;
+        position: relative;
+        width: 100%;
+        border-radius: 50px;
+        & i{
+          font-size: 33px;
+          height: 42px;
+          line-height: 42px;
+          width: 42px;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          position: absolute;
+          right: 0;
+          text-align: center;
+          top: 0;
+        }
+      }
+    }
+    & .scholarship-contant {
+      & h3{
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      & p{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+    }
+    &:hover{
+      transform: scale(1.04);
+    }
+  }
+}

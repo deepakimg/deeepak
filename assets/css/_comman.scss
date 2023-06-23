@@ -1,0 +1,115 @@
+.comman_button {
+    background: none;
+    border: 2px solid $white;
+    border-radius: 50px;
+    color: $white;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 22px;
+    position: relative;
+    text-transform: capitalize;
+    margin-left: 30px;
+    text-decoration: none; 
+    transition: all 0.3s;
+    z-index: 9;
+    &::before {
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #fff;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        border-radius: 50px;
+        transition: all 0.3s;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background: $primary2;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 50px;
+        width: 100%;
+        transition: all 0.3s;
+    }
+    &:hover::after{
+        height: 0;
+        left: 50%;
+        top: 50%;
+        width: 0;
+    }
+    &:hover{
+        color: $primary1;
+    }
+}
+section{
+    padding: 80px 0;
+}
+
+
+.section_title {
+    & {
+        margin-bottom: 90px;
+    }
+    & h2 {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 44px;
+        margin-top: 0px;
+    }
+    & span {
+        display: inline-flex;
+        background-color: $primary;
+        padding: 2px 12px;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        border-radius: 50px;
+    }
+}
+.comman_section {
+    padding: 170px 0 60px;
+    font-weight: 600;
+    & .nav{
+        border: #f2f2f2 2px solid;
+        border-bottom: none;
+        & a{
+            border-bottom: #f2f2f2 2px solid;
+            border-radius: 0px;
+            color: $black;
+            padding: 12px 18px;
+            font-size: 15px;
+            &.active{
+                color: #fff;
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #262626;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
